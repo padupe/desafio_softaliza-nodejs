@@ -58,7 +58,7 @@ async function populateDB() {
         remove: /[*+~.()'"!?:@]/g,
         // A propriedade lower, já formata todos os caracteres para minúsculo
         lower: true,
-      }).toLowerCase(),
+      }),
     },
   });
 
@@ -72,7 +72,7 @@ async function populateDB() {
         remove: /[*+~.()'"!?:@]/g,
         // A propriedade lower, já formata todos os caracteres para minúsculo
         lower: true,
-      }).toLowerCase(),
+      }),
     },
   });
 
