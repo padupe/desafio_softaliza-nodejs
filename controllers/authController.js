@@ -5,7 +5,7 @@ const logging = require('../utilities/logging');
 
 const logUser = async (req, res) => {
   const { username, password } = req.body;
-  console.log(req.body);
+  logging.debug(req.body);
 
   try {
     // Função para buscar se o username existe na Base do Banco de Dados
