@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  postgresql:
+    image: postgres:alpine
+    container_name: desafio_softaliza_api-postgresql
+    environment:
+      - POSTGRES_DB=desafio_softaliza
+      - POSTGRES_PASSWORD=development
+    ports:
+      - 5432:5432
+    volumes:
+      - desafio_softaliza_api_psql:/var/lib/postgresql/data
+volumes:
+  desafio_softaliza_api_psql:

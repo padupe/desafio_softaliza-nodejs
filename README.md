@@ -28,3 +28,61 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 - [SuperTest](https://www.npmjs.com/package/supertest 'SuperTest'): Módulo para testes de Integração
 - [uuidv4](https://www.npmjs.com/package/uuidv4 'uuidv4'): Módulo para criar UUID (_Universally Unique IDentifier_) conforme [RFC1422].
 - [winston](https://www.npmjs.com/package/winston 'winston'): Biblioteca para o registro de logging de Aplicações.
+
+## Comandos úteis para uso da Aplicação
+
+---
+
+### Developmente Server
+
+Iniciar o servidor da Aplicação:
+
+```
+    $ npx yarn dev
+```
+
+### Docker
+
+Subir as configurações do contêiner:
+
+```
+    $ docker-compose -f docker/docker-compose.yml up -d
+```
+
+### PostgreSQL (Banco de Dados) / ORM Prisma
+
+Interface Visual no navegador para acessar o Banco de Dados:
+
+```
+    $ npx prisma studio
+```
+
+Iniciar Migration:
+
+```
+    $ npx yarn migrate
+```
+
+Carregar os dados de teste no Banco:
+
+```
+    $ npx yarn seed
+```
+
+Realizar o _reset_ das Migrations e limpar o Banco de Dados:
+
+```
+    $ npx prisma migrate reset
+```
+
+> _**Atenção:** É importante verificar se os dados de teste "subiram" novamente para o banco. Caso contrário, será necessário rodar o comando '$ npx yarn seed'._
+
+---
+
+## Logging
+
+| Level |         Observação         |
+| :---: | :------------------------: |
+| info  |           Teste            |
+| debug |      Dados do Usuário      |
+| error | Erros de Banco / Aplicação |
