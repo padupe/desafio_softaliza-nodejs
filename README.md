@@ -26,6 +26,7 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 - [nodemon](https://www.npmjs.com/package/nodemon 'nodemon'): Ferramenta que reinicia automaticamente o servidor quando mudanças são detectadas.
 - [Prettier](https://prettier.io/ 'Prettier'): "Formatador" de Código
 - [SuperTest](https://www.npmjs.com/package/supertest 'SuperTest'): Módulo para testes de Integração
+- [slugify](https://www.npmjs.com/package/slugify 'slugify'): Módulo para gerar _slugs_ automaticamente.
 - [uuidv4](https://www.npmjs.com/package/uuidv4 'uuidv4'): Módulo para criar UUID (_Universally Unique IDentifier_) conforme [RFC1422].
 - [winston](https://www.npmjs.com/package/winston 'winston'): Biblioteca para o registro de logging de Aplicações.
 
