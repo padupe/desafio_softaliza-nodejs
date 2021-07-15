@@ -19,13 +19,13 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 > _Em ordem alfabética_
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt 'bcrypt'): Biblioteca para realizar _hash_ de senhas.
-- [email-validator](https://www.npmjs.com/package/email-validator 'email-validator'): Módulo para validar endereço de e-mail
-- [ESLint](https://eslint.org/ 'ESLint'): "Corretor" de erros de Código/Sintaxe)
-- [Jest](https://jestjs.io/ 'Jest'): Estrutura de testes de JavaScript
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken 'jsonwebtoken'): Módulo de Autenticação para Segurança da Aplicação
+- [email-validator](https://www.npmjs.com/package/email-validator 'email-validator'): Módulo para validar endereço de e-mail.
+- [ESLint](https://eslint.org/ 'ESLint'): "Corretor" de erros de Código/Sintaxe).
+- [Jest](https://jestjs.io/ 'Jest'): Estrutura de testes de JavaScript.
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken 'jsonwebtoken'): Módulo de Autenticação para Segurança da Aplicação.
 - [nodemon](https://www.npmjs.com/package/nodemon 'nodemon'): Ferramenta que reinicia automaticamente o servidor quando mudanças são detectadas.
 - [Prettier](https://prettier.io/ 'Prettier'): "Formatador" de Código
-- [SuperTest](https://www.npmjs.com/package/supertest 'SuperTest'): Módulo para testes de Integração
+- [SuperTest](https://www.npmjs.com/package/supertest 'SuperTest'): Módulo para testes de Integração.
 - [slugify](https://www.npmjs.com/package/slugify 'slugify'): Módulo para gerar _slugs_ automaticamente.
 - [uuidv4](https://www.npmjs.com/package/uuidv4 'uuidv4'): Módulo para criar UUID (_Universally Unique IDentifier_) conforme [RFC1422].
 - [winston](https://www.npmjs.com/package/winston 'winston'): Biblioteca para o registro de logging de Aplicações.
