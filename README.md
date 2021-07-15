@@ -16,10 +16,11 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 
 ## Dependências
 
+---
+
 > _Em ordem alfabética_
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt 'bcrypt'): Biblioteca para realizar _hash_ de senhas.
-- [email-validator](https://www.npmjs.com/package/email-validator 'email-validator'): Módulo para validar endereço de e-mail.
 - [ESLint](https://eslint.org/ 'ESLint'): "Corretor" de erros de Código/Sintaxe).
 - [Jest](https://jestjs.io/ 'Jest'): Estrutura de testes de JavaScript.
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken 'jsonwebtoken'): Módulo de Autenticação para Segurança da Aplicação.
@@ -30,11 +31,31 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 - [uuidv4](https://www.npmjs.com/package/uuidv4 'uuidv4'): Módulo para criar UUID (_Universally Unique IDentifier_) conforme [RFC1422].
 - [winston](https://www.npmjs.com/package/winston 'winston'): Biblioteca para o registro de logging de Aplicações.
 
+## MER (Modelo Entidade Relacionamento)
+
+---
+
+![img]
+
 ## Modelos de JSON para uso na Aplicação
 
 ---
 
+**DICA:** Para facilitar as os testes utilizando o [Insomnia](https://insomnia.rest/ 'Insomnia'), crie uma "Enviroment":
+
+```json
+{
+  "baseurl": "localhost:2121/v1"
+}
+```
+
+> Para utilizar a "Enviroment", na barra de endereços utilize as teclas **Ctrl+Espaço**
+
 ### Login na Aplicação
+
+#### Auth
+
+- Login
 
 Usuário Válido:
 
@@ -46,6 +67,110 @@ Usuário Válido:
 ```
 
 > **ATENÇÃO:** Após logar na Aplicação, será necessário "guardar" o Token gerado para prosseguir nos demais endpoints
+
+#### BlogPost
+
+- POST (_Para criar um BlogPost_)
+
+Exemplo de "Novo" Post:
+
+> Inserir na barra do Insomnia
+
+```
+    localhost:2121/v1/blogspot/
+```
+
+JSON de "carga":
+
+```json
+{
+  "username": "paulopeixoto",
+  "title_post": "A New Post.",
+  "content_post": "Example"
+}
+```
+
+> **IMPORTANTE:** Os três campos são obrigatórios.
+
+**Retorno esperado:**
+
+```json
+{
+  "post": {
+    "user": {
+      "username": "paulopeixoto"
+    },
+    "title": "A New Post.",
+    "content": "Example"
+  },
+  "msg": "New Post Created!"
+}
+```
+
+---
+
+- GET (_Exibir um BlogPost pelo slug_)
+
+Exemplo de consulta:
+
+> Inserir na barra do Insomnia
+
+```
+    localhost:2121/v1/blogspot/the-history-of-my-life
+```
+
+**Retorno esperado:**
+
+```json
+{
+  "post": {
+    "user": {
+      "username": "paulopeixoto"
+    },
+    "title": "The history of my life!",
+    "content": "Summary of my professional trajectory"
+  },
+  "msg": "Show Post Successful!"
+}
+```
+
+---
+
+- PUT (_Para atualizar um BlogPost_)
+
+Exemplo de Atualização de um Post:
+
+> Inserir na barra do Insomnia
+
+```
+    localhost:2121/v1/blogspot/the-history-of-my-life
+```
+
+JSON de "carga":
+
+```json
+{
+  "new_title": "Update Post",
+  "new_content": "Example"
+}
+```
+
+> **IMPORTANTE:** Os dois campos são obrigatórios.
+
+**Retorno esperado:**
+
+```json
+{
+  "post": {
+    "user": {
+      "username": "paulopeixoto"
+    },
+    "title": "Update Post",
+    "content": "Example"
+  },
+  "msg": "Update Post Successful!"
+}
+```
 
 ## Comandos úteis para uso da Aplicação
 

@@ -16,17 +16,17 @@ const user_block = {
   password_hash: '123456',
 };
 
-const blogspot_1 = {
+const blogpost_1 = {
   title: 'The history of my life!',
   content: 'Summary of my professional trajectory',
 };
 
-const blogspot_2 = {
+const blogpost_2 = {
   title: 'How did I decide to become a developer?',
   content: 'The Career Transition Process',
 };
 
-const blogspot_3 = {
+const blogpost_3 = {
   title: 'Why did I choose to be Back-end?',
   content:
     'The challenges and opportunities that the back-end universe offers.',
@@ -34,7 +34,7 @@ const blogspot_3 = {
 
 // Função para Limpar o Banco de Dados
 async function clearDB() {
-  await prisma.blogSpot.deleteMany({ where: {} });
+  await prisma.blogPost.deleteMany({ where: {} });
   await prisma.user.deleteMany({ where: {} });
 }
 
@@ -48,12 +48,12 @@ async function populateDB() {
     },
   });
 
-  const blospot1 = await prisma.blogSpot.create({
+  const blogpost1 = await prisma.blogPost.create({
     data: {
       created_by: new_user.id,
-      title: blogspot_1.title,
-      content: blogspot_1.content,
-      slug: slugify(blogspot_1.title, {
+      title: blogpost_1.title,
+      content: blogpost_1.content,
+      slug: slugify(blogpost_1.title, {
         // A propriedade remove, ignora caracteres especiais ao gerar o slug
         remove: /[*+~.()'"!?:@]/g,
         // A propriedade lower, já formata todos os caracteres para minúsculo
@@ -62,12 +62,12 @@ async function populateDB() {
     },
   });
 
-  const blospot2 = await prisma.blogSpot.create({
+  const blogpost2 = await prisma.blogPost.create({
     data: {
       created_by: new_user.id,
-      title: blogspot_2.title,
-      content: blogspot_2.content,
-      slug: slugify(blogspot_2.title, {
+      title: blogpost_2.title,
+      content: blogpost_2.content,
+      slug: slugify(blogpost_2.title, {
         // A propriedade remove, ignora caracteres especiais ao gerar o slug
         remove: /[*+~.()'"!?:@]/g,
         // A propriedade lower, já formata todos os caracteres para minúsculo
@@ -76,12 +76,12 @@ async function populateDB() {
     },
   });
 
-  const blospot3 = await prisma.blogSpot.create({
+  const blogpost3 = await prisma.blogPost.create({
     data: {
       created_by: new_user.id,
-      title: blogspot_3.title,
-      content: blogspot_3.content,
-      slug: slugify(blogspot_3.title, {
+      title: blogpost_3.title,
+      content: blogpost_3.content,
+      slug: slugify(blogpost_3.title, {
         // A propriedade remove, ignora caracteres especiais ao gerar o slug
         remove: /[*+~.()'"!?:@]/g,
         // A propriedade lower, já formata todos os caracteres para minúsculo

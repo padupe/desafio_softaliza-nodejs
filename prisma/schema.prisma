@@ -17,10 +17,10 @@ model User {
   password_hash     String        @db.Text
   created_at        DateTime      @default(now())
   updated_at        DateTime      @default(now()) @updatedAt
-  blogspots         BlogSpot[]
+  blogspots         BlogPost[]
 }
 
-model BlogSpot {
+model BlogPost {
   id                String        @id @default(cuid())
   created_by        String
   title             String        @db.VarChar(60)
