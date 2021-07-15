@@ -6,15 +6,22 @@
   "author": "paulopeixoto <peixoto.pauloeduardo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "migrate": "npx prisma migrate dev --name init",
+    "seed": "node prisma/seed.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=15000",
+    "reset": "npx prisma migrate reset"
   },
   "dependencies": {
+    "@prisma/client": "^2.27.0",
+    "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
-    "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "jest": "^27.0.6",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.12",
+    "prisma": "^2.27.0",
+    "slugify": "^1.5.3",
     "supertest": "^6.1.3",
     "uuidv4": "^6.2.11",
     "winston": "^3.3.3"
