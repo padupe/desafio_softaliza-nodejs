@@ -73,10 +73,10 @@ Carregar os dados de teste no Banco:
 Realizar o _reset_ das Migrations e limpar o Banco de Dados:
 
 ```
-    $ npx prisma migrate reset
+    $ npx yarn reset
 ```
 
-> _**Atenção:** É importante verificar se os dados de teste "subiram" novamente para o banco. Caso contrário, será necessário rodar o comando '$ npx yarn seed'._
+> _**Atenção:** Após utilizar o comando "reset" será necessário rodar o comando '$ npx yarn seed'._
 
 ---
 
