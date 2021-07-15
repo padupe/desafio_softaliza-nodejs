@@ -1,0 +1,26 @@
+{
+  "name": "desafio_softaliza-nodejs",
+  "version": "1.0.0",
+  "description": "Desafio proposto pal Sotfaliza para contratação de Back-End Nodejs Junior",
+  "main": "index.js",
+  "author": "paulopeixoto <peixoto.pauloeduardo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3",
+    "uuidv4": "^6.2.11",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "prettier": "2.3.2"
+  }
+}
