@@ -30,6 +30,23 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 - [uuidv4](https://www.npmjs.com/package/uuidv4 'uuidv4'): Módulo para criar UUID (_Universally Unique IDentifier_) conforme [RFC1422].
 - [winston](https://www.npmjs.com/package/winston 'winston'): Biblioteca para o registro de logging de Aplicações.
 
+## Modelos de JSON para uso na Aplicação
+
+---
+
+### Login na Aplicação
+
+Usuário Válido:
+
+```json
+{
+  "email": "paulopeixoto",
+  "senha": "softaliza@2021"
+}
+```
+
+> **ATENÇÃO:** Após logar na Aplicação, será necessário "guardar" o Token gerado para prosseguir nos demais endpoints
+
 ## Comandos úteis para uso da Aplicação
 
 ---
