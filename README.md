@@ -35,7 +35,7 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 
 ---
 
-![img]
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Routes/readme/MER.png)
 
 ## Modelos de JSON para uso na Aplicação
 
@@ -169,6 +169,27 @@ JSON de "carga":
     "content": "Example"
   },
   "msg": "Update Post Successful!"
+}
+```
+
+---
+
+- DELETE (_Para deletar um BlogPost_)
+
+Exemplo de Exclusão de um Post:
+
+> Inserir na barra do Insomnia
+
+```
+    localhost:2121/v1/blogspot/why-did-i-choose-to-be-back-end
+```
+
+**Retorno esperado:**
+
+```json
+{
+  "user": "paulopeixoto",
+  "msg": "Delete Post Successful!"
 }
 ```
 
