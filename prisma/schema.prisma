@@ -17,15 +17,15 @@ model User {
   password_hash     String        @db.Text
   created_at        DateTime      @default(now())
   updated_at        DateTime      @default(now()) @updatedAt
-  blogspots         BlogSpots[]
+  blogspots         BlogSpot[]
 }
 
-model BlogSpots {
+model BlogSpot {
   id                String        @id @default(cuid())
   created_by        String
   title             String        @db.VarChar(60)
   content           String        @db.Text
-  slug              String        @db.VarChar(60)
+  slug              String        @unique @db.VarChar(60)
   created_at        DateTime      @default(now())
   updated_at        DateTime      @default(now()) @updatedAt
   user              User          @relation(fields: [created_by], references: [id])

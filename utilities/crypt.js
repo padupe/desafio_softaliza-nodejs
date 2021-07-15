@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const saltRounds = process.env.SALTROUNDS;
+const saltRounds = 10;
 
 //Função para realizar o "hash" da Senha
 const hash = async (data) => {
