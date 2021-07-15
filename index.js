@@ -1,5 +1,5 @@
 const express = require('express');
-// const routes = require('./routes');
+const routes = require('./routes');
 const logging = require('./utilities/logging');
 const app = express();
 
@@ -10,6 +10,6 @@ if (process.env.NODE_ENV !== 'test') {
   });
 }
 
-// app.use('/v1', routes);
+app.use('/v1', routes);
 
 module.exports = app;
