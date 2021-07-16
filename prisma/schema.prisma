@@ -17,7 +17,7 @@ model User {
   password_hash     String        @db.Text
   created_at        DateTime      @default(now())
   updated_at        DateTime      @default(now()) @updatedAt
-  blogspots         BlogPost[]
+  blogposts         BlogPost[]
 }
 
 model BlogPost {

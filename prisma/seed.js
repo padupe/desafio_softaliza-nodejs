@@ -1,6 +1,6 @@
 const prisma = require('./prisma');
 const { hash } = require('../utilities/crypt');
-const slugify = require('slugify'); // Função que cria o slug com base no título de cada BlogSpot
+const slugify = require('slugify'); // Função que cria o slug com base no título de cada BlogPost
 
 // Usuário Padrão para utilizarmos nos testes
 const default_user = {

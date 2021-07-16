@@ -2,8 +2,8 @@ const { verifyJWT } = require('../auth/token');
 const logging = require('../utilities/logging');
 const prisma = require('../prisma/prisma');
 const { findUsername } = require('./findUsername');
-const slugify = require('slugify'); // Função que cria o slug com base no título de cada BlogSpot
-const { findPost } = require('./blogSpot/findPost');
+const slugify = require('slugify'); // Função que cria o slug com base no título de cada BlogPost
+const { findPost } = require('./blogPost/findPost');
 
 const create = async (req, res) => {
   if (verifyJWT(req.headers.authorization.replace('Bearer ', ''))) {
@@ -121,7 +121,7 @@ const destroy = async (req, res) => {
       const postDelete = await prisma.blogPost.delete({
         where: { slug: slug },
         select: {
-          // Para retornar o username do Usuário que teve o blogSpot deletado
+          // Para retornar o username do Usuário que teve o blogPost deletado
           user: {
             select: {
               username: true,
