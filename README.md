@@ -245,6 +245,50 @@ Realizar o _reset_ das Migrations e limpar o Banco de Dados:
 
 ---
 
+## Testes
+
+Comando para rodar todos os testes:
+
+```
+    $ npx yarn test
+```
+
+Comando para testar o arquivo **auth.test.js** (_diretório routes_) :
+
+```
+    $ npx yarn test routes/auth.test.js
+```
+
+Comando para testar o arquivo **blogpost.test.js** (_diretório routes_) :
+
+```
+    $ npx yarn test routes/blogpost.test.js
+```
+
+Comando para testar o arquivo **findPost.test.js** (_diretório controllers/blogPost_) :
+
+```
+    $ npx yarn test controllers/blogPost/findPost.test.js
+```
+
+Comando para testar o arquivo **findUsername.test.js** (_diretório controllers_) :
+
+```
+    $ npx yarn test controllers/findUsername.test.js
+```
+
+**Coverage**
+
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Routes/readme/MER.png)
+
+Comando para validar o coverage:
+
+```
+    $ npx yarn test --coverage
+```
+
+---
+
 ## Logging
 
 | Level |         Observação         |
