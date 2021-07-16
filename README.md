@@ -71,7 +71,7 @@ Usuário Válido:
 
 Teste utilizando o Insomnia:
 
-![gif]
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20Auth%20_%20POST%5D.gif)
 
 ---
 
@@ -116,7 +116,7 @@ JSON de "carga":
 
 Teste utilizando o Insomnia:
 
-![gif]
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20POST%5D.gif)
 
 ---
 
@@ -148,7 +148,7 @@ Exemplo de consulta:
 
 Teste utilizando o Insomnia:
 
-![gif]
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20GET%5D.gif)
 
 ---
 
@@ -190,7 +190,7 @@ JSON de "carga":
 
 Teste utilizando o Insomnia:
 
-![gif]
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20PUT%5D.gif)
 
 ---
 
@@ -215,7 +215,7 @@ Exemplo de Exclusão de um Post:
 
 Teste utilizando o Insomnia:
 
-![gif]
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20DELETE%5D.gif)
 
 ---
 
