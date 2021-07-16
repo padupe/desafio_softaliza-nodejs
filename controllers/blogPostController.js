@@ -5,10 +5,6 @@ const { findUsername } = require('./findUsername');
 const slugify = require('slugify'); // Função que cria o slug com base no título de cada BlogSpot
 const { findPost } = require('./blogSpot/findPost');
 
-const index = async (req, res) => {
-  res.send('Route BlogSpot');
-};
-
 const create = async (req, res) => {
   if (verifyJWT(req.headers.authorization.replace('Bearer ', ''))) {
     const { username, title_post, content_post } = req.body;

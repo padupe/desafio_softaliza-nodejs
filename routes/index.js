@@ -5,6 +5,6 @@ const blogpost = require('./blogpost');
 
 app.use(express.json());
 app.use('/auth', auth);
-app.use('/blogspot', blogpost);
+app.use('/blogpost', blogpost);
 
 module.exports = app;
