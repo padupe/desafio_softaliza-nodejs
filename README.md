@@ -279,6 +279,8 @@ Comando para rodar todos os testes:
     $ npx yarn test
 ```
 
+> _**Atenção:** Após utilizar o comando '$ npx yarn test' a base do Banco de Dados será "resetada" automaticamente._
+
 Comando para testar o arquivo **auth.test.js** (_diretório routes_) :
 
 ```
