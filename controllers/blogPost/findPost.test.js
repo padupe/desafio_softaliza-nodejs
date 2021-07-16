@@ -6,6 +6,7 @@ let validSLUG = 'how-did-i-decide-to-become-a-developer';
 let failedSLUG = 'failed-slug';
 
 describe('Test Function findPost by SLUG', () => {
+  // Teste para validar quando um SLUG existente for informado
   it('Successful', async function (done) {
     await findPost('slug', validSLUG).then((result) => {
       expect(result.slug).toBe(validSLUG);
@@ -15,6 +16,7 @@ describe('Test Function findPost by SLUG', () => {
     });
   });
 
+  // Teste para validar quando um SLUG inexistente for informado
   it('Fail', async function (done) {
     await findPost('slug', failedSLUG).then((result) => {
       expect(result).toBe(null);
@@ -24,5 +26,5 @@ describe('Test Function findPost by SLUG', () => {
   });
 });
 
-// PARA RODAR ESTE TESTE:
+// PARA RODAR ESTE ARQUIVO DE TESTES:
 // $ npx yarn test controllers/blogPost/findPost.test.js

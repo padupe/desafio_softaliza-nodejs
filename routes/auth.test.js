@@ -74,5 +74,5 @@ describe('Auth Endpoint', () => {
   });
 });
 
-// PARA RODAR ESTE TESTE:
+// PARA RODAR ESTE ARQUIVO DE TESTES:
 // $ npx yarn test routes/auth.test.js

@@ -31,5 +31,5 @@ describe('Test Function findPost by SLUG', () => {
   });
 });
 
-// PARA RODAR ESTE TESTE:
+// PARA RODAR ESTE ARQUIVO DE TESTES:
 // $ npx yarn test controllers/findUsername.test.js

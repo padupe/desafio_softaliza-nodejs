@@ -56,6 +56,7 @@ const show = async (req, res) => {
       const showPost = await findPost('slug', slug);
       if (showPost == null) {
         logging.error('Post not found!');
+        return res.status(404).json({ err: 'Post not found!' });
       }
 
       return res
@@ -114,8 +115,6 @@ const destroy = async (req, res) => {
   if (verifyJWT(req.headers.authorization.replace('Bearer ', ''))) {
     const { slug } = req.params;
     logging.debug(JSON.stringify(req.params));
-
-    console.log(req.params);
 
     try {
       const postDelete = await prisma.blogPost.delete({
