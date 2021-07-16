@@ -129,7 +129,8 @@ Exemplo de consulta:
       "username": "paulopeixoto"
     },
     "title": "The history of my life!",
-    "content": "Summary of my professional trajectory"
+    "content": "Summary of my professional trajectory",
+    "slug": "the-history-of-my-life"
   },
   "msg": "Show Post Successful!"
 }
