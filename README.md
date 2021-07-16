@@ -21,6 +21,7 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 > _Em ordem alfabética_
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt 'bcrypt'): Biblioteca para realizar _hash_ de senhas.
+- [cross-env](https://www.npmjs.com/package/cross-env 'cross-env'): Módulo que permite executar scripts que definem e usam variáveis de ambiente.
 - [ESLint](https://eslint.org/ 'ESLint'): "Corretor" de erros de Código/Sintaxe).
 - [Jest](https://jestjs.io/ 'Jest'): Estrutura de testes de JavaScript.
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken 'jsonwebtoken'): Módulo de Autenticação para Segurança da Aplicação.
@@ -250,3 +251,6 @@ Realizar o _reset_ das Migrations e limpar o Banco de Dados:
 | info  |           Teste            |
 | debug |      Dados do Usuário      |
 | error | Erros de Banco / Aplicação |
+
+[//]: #
+[rfc1422]: https://www.ietf.org/rfc/rfc4122.txt
