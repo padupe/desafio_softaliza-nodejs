@@ -1,3 +1,5 @@
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Desafio_Softaliza.png)
+
 # Desafio [Softaliza](https://softaliza.com.br/ 'Softaliza') Nodejs
 
 API baseada em **Nodejs** com base na proposta do Desafio para Contratação de **Desenvolvedor Back-End Júnior** na Sotftaliza.
