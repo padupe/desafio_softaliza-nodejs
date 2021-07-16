@@ -279,7 +279,7 @@ Comando para testar o arquivo **findUsername.test.js** (_diretório controllers_
 
 **Coverage**
 
-![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Routes/readme/MER.png)
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/coverage.png)
 
 Comando para validar o coverage:
 
