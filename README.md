@@ -77,7 +77,7 @@ Exemplo de "Novo" Post:
 > Inserir na barra do Insomnia
 
 ```
-    localhost:2121/v1/blogspot/
+    localhost:2121/v1/blogpost/
 ```
 
 JSON de "carga":
@@ -116,7 +116,7 @@ Exemplo de consulta:
 > Inserir na barra do Insomnia
 
 ```
-    localhost:2121/v1/blogspot/the-history-of-my-life
+    localhost:2121/v1/blogpost/the-history-of-my-life
 ```
 
 **Retorno esperado:**
@@ -143,7 +143,7 @@ Exemplo de Atualização de um Post:
 > Inserir na barra do Insomnia
 
 ```
-    localhost:2121/v1/blogspot/the-history-of-my-life
+    localhost:2121/v1/blogpost/the-history-of-my-life
 ```
 
 JSON de "carga":
@@ -181,7 +181,7 @@ Exemplo de Exclusão de um Post:
 > Inserir na barra do Insomnia
 
 ```
-    localhost:2121/v1/blogspot/why-did-i-choose-to-be-back-end
+    localhost:2121/v1/blogpost/why-did-i-choose-to-be-back-end
 ```
 
 **Retorno esperado:**
