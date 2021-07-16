@@ -63,7 +63,6 @@ const show = async (req, res) => {
         .status(200)
         .json({ post: showPost, msg: 'Show Post Successful!' });
     } catch (err) {
-      console.log(err);
       logging.error(JSON.stringify(err));
       return res.status(404).json({ err: 'Post not found!' });
     }
@@ -128,7 +127,6 @@ const destroy = async (req, res) => {
           },
         },
       });
-      console.log(postDelete);
       return res.status(202).json({
         user: postDelete.user.username,
         msg: 'Delete Post Successful!',

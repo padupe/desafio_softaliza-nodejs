@@ -69,6 +69,12 @@ Usuário Válido:
 
 > **ATENÇÃO:** Após logar na Aplicação, será necessário "guardar" o Token gerado para prosseguir nos demais endpoints
 
+Teste utilizando o Insomnia:
+
+![gif]
+
+---
+
 #### BlogPost
 
 - POST (_Para criar um BlogPost_)
@@ -108,6 +114,10 @@ JSON de "carga":
 }
 ```
 
+Teste utilizando o Insomnia:
+
+![gif]
+
 ---
 
 - GET (_Exibir um BlogPost pelo slug_)
@@ -135,6 +145,10 @@ Exemplo de consulta:
   "msg": "Show Post Successful!"
 }
 ```
+
+Teste utilizando o Insomnia:
+
+![gif]
 
 ---
 
@@ -174,6 +188,10 @@ JSON de "carga":
 }
 ```
 
+Teste utilizando o Insomnia:
+
+![gif]
+
 ---
 
 - DELETE (_Para deletar um BlogPost_)
@@ -194,6 +212,12 @@ Exemplo de Exclusão de um Post:
   "msg": "Delete Post Successful!"
 }
 ```
+
+Teste utilizando o Insomnia:
+
+![gif]
+
+---
 
 ## Comandos úteis para uso da Aplicação
 
