@@ -323,5 +323,9 @@ Comando para validar o coverage:
 | debug |      Dados do Usuário      |
 | error | Erros de Banco / Aplicação |
 
+---
+
+_Aplicação desenvolvida por [Paulo Eduardo Peixoto](https://www.linkedin.com/in/paulo-eduardo-peixoto-2155a866/ 'Paulo Eduardo Peixoto')_
+
 [//]: #
 [rfc1422]: https://www.ietf.org/rfc/rfc4122.txt
