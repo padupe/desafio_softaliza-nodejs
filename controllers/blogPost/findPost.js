@@ -16,6 +16,7 @@ async function findPost(type, data) {
         },
         title: true,
         content: true,
+        slug: true,
       },
     });
     if (result == null) {
@@ -37,6 +38,7 @@ async function findPost(type, data) {
         },
         title: true,
         content: true,
+        slug: true,
       },
     });
     if (result == null) {

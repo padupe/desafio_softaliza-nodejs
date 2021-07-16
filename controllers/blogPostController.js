@@ -56,13 +56,13 @@ const show = async (req, res) => {
       const showPost = await findPost('slug', slug);
       if (showPost == null) {
         logging.error('Post not found!');
+        return res.status(404).json({ err: 'Post not found!' });
       }
 
       return res
         .status(200)
         .json({ post: showPost, msg: 'Show Post Successful!' });
     } catch (err) {
-      console.log(err);
       logging.error(JSON.stringify(err));
       return res.status(404).json({ err: 'Post not found!' });
     }
@@ -115,8 +115,6 @@ const destroy = async (req, res) => {
     const { slug } = req.params;
     logging.debug(JSON.stringify(req.params));
 
-    console.log(req.params);
-
     try {
       const postDelete = await prisma.blogPost.delete({
         where: { slug: slug },
@@ -129,7 +127,6 @@ const destroy = async (req, res) => {
           },
         },
       });
-      console.log(postDelete);
       return res.status(202).json({
         user: postDelete.user.username,
         msg: 'Delete Post Successful!',
@@ -143,7 +140,6 @@ const destroy = async (req, res) => {
 };
 
 module.exports = {
-  index,
   create,
   show,
   update,

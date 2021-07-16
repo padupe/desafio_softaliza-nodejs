@@ -1,3 +1,5 @@
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Desafio_Softaliza.png)
+
 # Desafio [Softaliza](https://softaliza.com.br/ 'Softaliza') Nodejs
 
 API baseada em **Nodejs** com base na proposta do Desafio para Contratação de **Desenvolvedor Back-End Júnior** na Sotftaliza.
@@ -21,6 +23,7 @@ API baseada em **Nodejs** com base na proposta do Desafio para Contratação de 
 > _Em ordem alfabética_
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt 'bcrypt'): Biblioteca para realizar _hash_ de senhas.
+- [cross-env](https://www.npmjs.com/package/cross-env 'cross-env'): Módulo que permite executar scripts que definem e usam variáveis de ambiente.
 - [ESLint](https://eslint.org/ 'ESLint'): "Corretor" de erros de Código/Sintaxe).
 - [Jest](https://jestjs.io/ 'Jest'): Estrutura de testes de JavaScript.
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken 'jsonwebtoken'): Módulo de Autenticação para Segurança da Aplicação.
@@ -68,6 +71,12 @@ Usuário Válido:
 
 > **ATENÇÃO:** Após logar na Aplicação, será necessário "guardar" o Token gerado para prosseguir nos demais endpoints
 
+Teste utilizando o Insomnia:
+
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20Auth%20_%20POST%5D.gif)
+
+---
+
 #### BlogPost
 
 - POST (_Para criar um BlogPost_)
@@ -107,6 +116,10 @@ JSON de "carga":
 }
 ```
 
+Teste utilizando o Insomnia:
+
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20POST%5D.gif)
+
 ---
 
 - GET (_Exibir um BlogPost pelo slug_)
@@ -128,11 +141,16 @@ Exemplo de consulta:
       "username": "paulopeixoto"
     },
     "title": "The history of my life!",
-    "content": "Summary of my professional trajectory"
+    "content": "Summary of my professional trajectory",
+    "slug": "the-history-of-my-life"
   },
   "msg": "Show Post Successful!"
 }
 ```
+
+Teste utilizando o Insomnia:
+
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20GET%5D.gif)
 
 ---
 
@@ -172,6 +190,10 @@ JSON de "carga":
 }
 ```
 
+Teste utilizando o Insomnia:
+
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20PUT%5D.gif)
+
 ---
 
 - DELETE (_Para deletar um BlogPost_)
@@ -192,6 +214,12 @@ Exemplo de Exclusão de um Post:
   "msg": "Delete Post Successful!"
 }
 ```
+
+Teste utilizando o Insomnia:
+
+![gif](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Insomnia%20%5BTESTE%20-%20Endpoint_%20BlogPost%20_%20DELETE%5D.gif)
+
+---
 
 ## Comandos úteis para uso da Aplicação
 
@@ -243,6 +271,52 @@ Realizar o _reset_ das Migrations e limpar o Banco de Dados:
 
 ---
 
+## Testes
+
+Comando para rodar todos os testes:
+
+```
+    $ npx yarn test
+```
+
+> _**Atenção:** Após utilizar o comando '$ npx yarn test' a base do Banco de Dados será "resetada" automaticamente._
+
+Comando para testar o arquivo **auth.test.js** (_diretório routes_) :
+
+```
+    $ npx yarn test routes/auth.test.js
+```
+
+Comando para testar o arquivo **blogpost.test.js** (_diretório routes_) :
+
+```
+    $ npx yarn test routes/blogpost.test.js
+```
+
+Comando para testar o arquivo **findPost.test.js** (_diretório controllers/blogPost_) :
+
+```
+    $ npx yarn test controllers/blogPost/findPost.test.js
+```
+
+Comando para testar o arquivo **findUsername.test.js** (_diretório controllers_) :
+
+```
+    $ npx yarn test controllers/findUsername.test.js
+```
+
+**Coverage**
+
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Coverage_test.png)
+
+Comando para validar o coverage:
+
+```
+    $ npx yarn test --coverage
+```
+
+---
+
 ## Logging
 
 | Level |         Observação         |
@@ -250,3 +324,10 @@ Realizar o _reset_ das Migrations e limpar o Banco de Dados:
 | info  |           Teste            |
 | debug |      Dados do Usuário      |
 | error | Erros de Banco / Aplicação |
+
+---
+
+_Aplicação desenvolvida por [Paulo Eduardo Peixoto](https://www.linkedin.com/in/paulo-eduardo-peixoto-2155a866/ 'Paulo Eduardo Peixoto')_
+
+[//]: #
+[rfc1422]: https://www.ietf.org/rfc/rfc4122.txt
