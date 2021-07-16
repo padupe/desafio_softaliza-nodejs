@@ -40,16 +40,18 @@ describe('Auth Endpoint', () => {
 
 describe('BlogPost Endpoint', () => {
   it('Create New Post', function (done) {
+    console.log('TokenJWT:', tokenJWT);
+    console.log('newPost:', newPost);
     request(app)
-      .post('v1/blogpost')
-      .auth(tokenJWT.tokenJWT, { type: 'bearer' })
+      .post('/v1/blogpost')
+      .auth(tokenJWT, { type: 'bearer' })
       .send(newPost)
       .set('Accept', 'application/json')
       .expect(201)
       .expect('Content-Type', /json/)
       .expect((res) => {
-        let { post, msg } = res.body;
-        createdPost = { post, msg };
+        let { returnPost } = res.body;
+        createdPost = returnPost;
         console.log('New Post:', res.body);
       })
       .end((err) => {
