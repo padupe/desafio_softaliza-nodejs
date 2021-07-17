@@ -325,9 +325,9 @@ Comando para testar o arquivo **token.test.js** (_diretório auth_) :
 
 ---
 
-### **Coverage**
+### Coverage
 
-![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Coverage_test.png)
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Update-Tests/readme/Coverage_Alltests.png)
 
 Comando para validar o coverage:
 
