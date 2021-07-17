@@ -279,7 +279,9 @@ Comando para rodar todos os testes:
     $ npx yarn test
 ```
 
-> _**Atenção:** Após utilizar o comando '$ npx yarn test' a base do Banco de Dados será "resetada" automaticamente._
+> _**Atenção:** Após utilizar o comando '$ npx yarn test' a base do Banco de Dados será "limpa" e "populada" novamente de maneira automática._
+
+### Testes de Integração
 
 Comando para testar o arquivo **auth.test.js** (_diretório routes_) :
 
@@ -291,6 +293,16 @@ Comando para testar o arquivo **blogpost.test.js** (_diretório routes_) :
 
 ```
     $ npx yarn test routes/blogpost.test.js
+```
+
+---
+
+### Testes Unitários
+
+Comando para testar o arquivo **crypt.test.js** (_diretório utilities_) :
+
+```
+    $ npx yarn test utilities/crypt.test.js
 ```
 
 Comando para testar o arquivo **findPost.test.js** (_diretório controllers/blogPost_) :
@@ -305,9 +317,17 @@ Comando para testar o arquivo **findUsername.test.js** (_diretório controllers_
     $ npx yarn test controllers/findUsername.test.js
 ```
 
-**Coverage**
+Comando para testar o arquivo **token.test.js** (_diretório auth_) :
 
-![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Tests/readme/Coverage_test.png)
+```
+    $ npx yarn test auth/token.test.js
+```
+
+---
+
+### Coverage
+
+![img](https://github.com/padupe/desafio_softaliza-nodejs/blob/Update-Tests/readme/Coverage_Alltests.png)
 
 Comando para validar o coverage:
 
