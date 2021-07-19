@@ -64,8 +64,8 @@ Usuário Válido:
 
 ```json
 {
-  "email": "paulopeixoto",
-  "senha": "softaliza@2021"
+  "username": "paulopeixoto",
+  "password": "softaliza@2021"
 }
 ```
 
